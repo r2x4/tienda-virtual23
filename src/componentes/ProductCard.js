@@ -9,7 +9,7 @@ const ProductCard = ({ imgSrc, title, price, discount, noCartIcon }) => {
       {price && <p>{price}</p>}
       {discount && <span className="discount-badge">{discount}</span>}
       
-      {/* Ícono de la canasta solo si no se pasa la propiedad noCartIcon */}
+     
       {!noCartIcon && (
         <button className="add-to-cart">
           <i className="fas fa-shopping-cart"></i> Agregar al carrito

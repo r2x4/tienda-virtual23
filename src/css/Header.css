@@ -1,7 +1,7 @@
 /* Estilos básicos para el header */
 .header {
-    background-color: #2e3b4e; /* Color de fondo oscuro */
-    padding: 20px 0; /* Espaciado superior e inferior */
+    background-color: #44b670; /* Color de fondo oscuro */
+    padding: none; /* Espaciado superior e inferior */
     color: white; /* Color del texto */
     display: flex;
     justify-content: space-between; /* Distribuye el contenido con espacio entre */
@@ -23,9 +23,11 @@
   }
   
   .header .logo {
-    font-size: 2.5rem; /* Tamaño grande para el logo */
-    color: #ffcc00; /* Color amarillo para el logo */
-    margin-right: 15px;
+    font-size: 3.5rem; /* Tamaño grande para el logo */
+    color: #fcf3f3; /* Color amarillo para el logo */
+    margin-right: 5px;
+    padding-left: 130px;
+    
   }
   
   /* Barra de navegación */
@@ -43,7 +45,7 @@
   }
   
   .nav-links a:hover {
-    color: #ffcc00; /* Cambia el color cuando el mouse pasa por encima */
+    color: #df4747; /* Cambia el color cuando el mouse pasa por encima */
   }
   
   /* Dropdown para categorías */
@@ -52,7 +54,7 @@
   }
   
   .dropbtn {
-    background-color: #2e3b4e;
+    background-color: #9dc4b8;
     color: white;
     border: none;
     font-size: 1rem;
@@ -83,7 +85,7 @@
   }
   
   .dropdown-content a:hover {
-    background-color: #ffcc00;
+    background-color: #7fc3e2;
     color: black;
   }
   
