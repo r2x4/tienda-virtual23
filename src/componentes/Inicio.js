@@ -8,7 +8,7 @@ const Inicio = () => {
     const [password, setPassword] = useState('');
     const [recordar, setRecordar] = useState(false);
 
-    // Cargar usuario y contraseña desde el almacenamiento local si "Recordar" está activado
+    // Cargar usuario y contraseña
     useEffect(() => {
         const savedUser = localStorage.getItem('usuario');
         const savedPassword = localStorage.getItem('password');

@@ -28,7 +28,7 @@ const CrearCuenta = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Verificamos que las contraseñas coincidan
+        // para verificar que  las contraseñas coincidan
         if (formData.password !== formData.confirmarPassword) {
             alert('Las contraseñas no coinciden');
             return;
@@ -52,12 +52,12 @@ const CrearCuenta = () => {
             return;
         }
 
-        // Agregar el nuevo usuario al array de usuarios
+        // array de usuarios
         usuariosGuardados.push(nuevoUsuario);
         localStorage.setItem('usuarios', JSON.stringify(usuariosGuardados));
 
         alert('Cuenta creada exitosamente. Ahora puedes iniciar sesión.');
-        navigate('/');  // Redirige al inicio de sesión (Login)
+        navigate('/');  // Redirige al  (Login)
     };
 
     return (

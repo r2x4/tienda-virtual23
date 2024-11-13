@@ -1,42 +1,42 @@
 /* Estilos generales para el contenedor */
 .inicio-container {
-    height: 100vh; /* Asegura que ocupe toda la pantalla */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Alineamos todo en columna */
-    background-image: url('../imagenes/Fondo2.jpg'); /* Ruta a la imagen de fondo */
-    background-size: cover; /* Cubre todo el contenedor */
-    background-position: center center; /* Centra la imagen de fondo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    position: relative; /* Para el posicionamiento del título */
+    flex-direction: column; 
+    background-image: url('../imagenes/Fondo2.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    position: relative; 
 }
 
 /* Estilo para el título principal en la parte superior */
 .main-title {
-    font-size: 3rem; /* Tamaño grande */
-    color: rgb(247, 243, 243); /* Color blanco para que contraste con la imagen */
+    font-size: 3rem; 
+    color: rgb(247, 243, 243); 
     font-weight: bold;
-    position: absolute; /* Lo colocamos encima de la imagen */
-    top: 30px; /* 30px desde la parte superior */
+    position: absolute; 
+    top: 30px; 
     left: 50%;
-    transform: translateX(-50%); /* Centrado horizontal */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para que sea más legible */
-    z-index: 10; /* Para que esté sobre la imagen */
+    transform: translateX(-50%); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+    z-index: 10; 
 }
 
 /* Estilos del formulario de ingreso */
 .right-form {
-    background-color: rgba(191, 192, 250, 0.8); /* Fondo blanco con algo de transparencia */
+    background-color: rgba(191, 192, 250, 0.8); 
     padding: 30px;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px; /* Ancho máximo para el formulario */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del formulario */
-    z-index: 5; /* Colocamos este z-index para que esté encima de la imagen de fondo */
+    max-width: 400px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 5; 
     display: flex;
-    flex-direction: column; /* Alineamos los elementos del formulario en columna */
-    align-items: center; /* Centrar los elementos horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
 }
 
 /* Títulos y textos */
@@ -51,14 +51,14 @@ label {
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-    text-align: left; /* Alineamos los labels a la izquierda */
-    width: 100%; /* Hacemos que el label ocupe todo el ancho disponible */
-    margin-left: 0; /* Eliminamos margen izquierdo */
+    text-align: left; 
+    width: 100%; 
+    margin-left: 0; 
 }
 
 /* Estilos de los campos de texto */
 input[type="text"], input[type="password"] {
-    width: 95%; /* Los campos de usuario y contraseña ocuparán el 80% del contenedor */
+    width: 95%; 
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -68,38 +68,38 @@ input[type="text"], input[type="password"] {
 
 /* Estilo para el checkbox "Recordar" */
 .check {
-    display: inline-flex; /* Hace que el checkbox y el texto estén en la misma línea */
-    align-items: center; /* Alinea verticalmente el checkbox y el texto */
+    display: inline-flex; 
+    align-items: center; 
     margin-bottom: 15px;
-    width: 100%; /* Hace que ocupe el 100% del contenedor */
-    justify-content: flex-start; /* Alineamos al inicio */
+    width: 100%; 
+    justify-content: flex-start; 
 }
 
 /* Estilo del checkbox */
 input[type="checkbox"] {
-    margin-right: 7px; /* Espacio entre el checkbox y el texto */
-    width: 20px;  /* Aseguramos que el checkbox no sea muy grande */
+    margin-right: 7px; 
+    width: 20px;  
     height: 20px;
-    accent-color: #007bff; /* Establece el color por defecto del checkbox */
+    accent-color: #007bff; 
 }
 
-/* Cuando el checkbox está marcado, cambiamos el color a rojo */
+
 input[type="checkbox"]:checked {
-    accent-color: red; /* Cambia el color del checkbox a rojo cuando está marcado */
+    accent-color: red; 
 }
 
 .button-direction, .create-account-btn {
-    width: 100%; /* Los botones ocupan el 70% del contenedor */
-    padding: 12px 0; /* Altura de 12px */
+    width: 100%; 
+    padding: 12px 0; 
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px; /* Tamaño del texto */
+    font-size: 16px; 
     cursor: pointer;
-    margin: 0 auto 15px; /* Centramos horizontalmente con 'auto' y dejamos un margen inferior */
-    text-align: center; /* Alineamos el texto dentro del botón */
-    display: block; /* Usamos display: block para que el 'margin: 0 auto' funcione */
+    margin: 0 auto 15px; 
+    text-align: center; 
+    display: block; 
 }
 
 
@@ -107,7 +107,7 @@ input[type="checkbox"]:checked {
     background-color: #44b670;
 }
 
-/* Centrado del texto de los párrafos y enlaces */
+/* Centrado del texto 
 p {
     text-align: center;
 }
@@ -120,43 +120,43 @@ a {
 /* Media Query para pantallas grandes (mayores a 1200px) */
 @media (min-width: 1200px) {
     .right-form {
-        max-width: 500px; /* Aumentamos el tamaño del formulario en pantallas grandes */
-        padding: 40px; /* Agregamos un poco más de espacio */
+        max-width: 500px; 
+        padding: 40px; 
     }
     
     .main-title {
-        font-size: 4rem; /* Aumentamos el tamaño del título */
-        top: 50px; /* Lo movemos un poco más abajo */
+        font-size: 4rem;
+        top: 50px; 
     }
     
     .button-direction, .create-account-btn {
-        padding: 14px 0; /* Hacemos los botones un poco más grandes */
+        padding: 14px 0; 
     }
 }
 
 /* Media Query para dispositivos móviles (menores a 768px) */
 @media (max-width: 768px) {
     .main-title {
-        font-size: 2.5rem; /* Reducimos el tamaño del título para pantallas móviles */
-        top: 20px; /* Movemos el título un poco más arriba */
+        font-size: 2.5rem; 
+        top: 20px; 
     }
 
     .right-form {
-        max-width: 90%; /* El formulario ocupará más espacio en pantallas pequeñas */
-        padding: 20px; /* Reducimos el padding para ahorrar espacio */
+        max-width: 90%; 
+        padding: 20px; 
     }
 
     input[type="text"], input[type="password"], .button-direction, .create-account-btn {
-        width: 100%; /* Los inputs y botones ocuparán el 100% en móviles */
-        padding: 12px 0; /* Hacemos los inputs y botones más grandes */
+        width: 100%; 
+        padding: 12px 0; 
     }
 
     label {
-        margin-left: 0; /* Eliminamos el margen izquierdo para mejorar el espaciado en móviles */
+        margin-left: 0; 
     }
 
     .check {
-        width: 100%; /* Aseguramos que el checkbox también ocupe el 100% */
+        width: 100%; 
     }
 }
 
