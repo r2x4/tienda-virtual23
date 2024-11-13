@@ -1,0 +1,164 @@
+/* Estilos generales para el contenedor */
+.inicio-container {
+    height: 100vh; /* Asegura que ocupe toda la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alineamos todo en columna */
+    background-image: url('../imagenes/Fondo2.jpg'); /* Ruta a la imagen de fondo */
+    background-size: cover; /* Cubre todo el contenedor */
+    background-position: center center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Para el posicionamiento del título */
+}
+
+/* Estilo para el título principal en la parte superior */
+.main-title {
+    font-size: 3rem; /* Tamaño grande */
+    color: rgb(247, 243, 243); /* Color blanco para que contraste con la imagen */
+    font-weight: bold;
+    position: absolute; /* Lo colocamos encima de la imagen */
+    top: 30px; /* 30px desde la parte superior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrado horizontal */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para que sea más legible */
+    z-index: 10; /* Para que esté sobre la imagen */
+}
+
+/* Estilos del formulario de ingreso */
+.right-form {
+    background-color: rgba(191, 192, 250, 0.8); /* Fondo blanco con algo de transparencia */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Ancho máximo para el formulario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor del formulario */
+    z-index: 5; /* Colocamos este z-index para que esté encima de la imagen de fondo */
+    display: flex;
+    flex-direction: column; /* Alineamos los elementos del formulario en columna */
+    align-items: center; /* Centrar los elementos horizontalmente */
+}
+
+/* Títulos y textos */
+h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Alineación y estilo de los labels */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left; /* Alineamos los labels a la izquierda */
+    width: 100%; /* Hacemos que el label ocupe todo el ancho disponible */
+    margin-left: 0; /* Eliminamos margen izquierdo */
+}
+
+/* Estilos de los campos de texto */
+input[type="text"], input[type="password"] {
+    width: 95%; /* Los campos de usuario y contraseña ocuparán el 80% del contenedor */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el checkbox "Recordar" */
+.check {
+    display: inline-flex; /* Hace que el checkbox y el texto estén en la misma línea */
+    align-items: center; /* Alinea verticalmente el checkbox y el texto */
+    margin-bottom: 15px;
+    width: 100%; /* Hace que ocupe el 100% del contenedor */
+    justify-content: flex-start; /* Alineamos al inicio */
+}
+
+/* Estilo del checkbox */
+input[type="checkbox"] {
+    margin-right: 7px; /* Espacio entre el checkbox y el texto */
+    width: 20px;  /* Aseguramos que el checkbox no sea muy grande */
+    height: 20px;
+    accent-color: #007bff; /* Establece el color por defecto del checkbox */
+}
+
+/* Cuando el checkbox está marcado, cambiamos el color a rojo */
+input[type="checkbox"]:checked {
+    accent-color: red; /* Cambia el color del checkbox a rojo cuando está marcado */
+}
+
+.button-direction, .create-account-btn {
+    width: 100%; /* Los botones ocupan el 70% del contenedor */
+    padding: 12px 0; /* Altura de 12px */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px; /* Tamaño del texto */
+    cursor: pointer;
+    margin: 0 auto 15px; /* Centramos horizontalmente con 'auto' y dejamos un margen inferior */
+    text-align: center; /* Alineamos el texto dentro del botón */
+    display: block; /* Usamos display: block para que el 'margin: 0 auto' funcione */
+}
+
+
+.button-direction:hover, .create-account-btn:hover {
+    background-color: #44b670;
+}
+
+/* Centrado del texto de los párrafos y enlaces */
+p {
+    text-align: center;
+}
+
+a {
+    color: #f30202;
+    text-decoration: none;
+}
+
+/* Media Query para pantallas grandes (mayores a 1200px) */
+@media (min-width: 1200px) {
+    .right-form {
+        max-width: 500px; /* Aumentamos el tamaño del formulario en pantallas grandes */
+        padding: 40px; /* Agregamos un poco más de espacio */
+    }
+    
+    .main-title {
+        font-size: 4rem; /* Aumentamos el tamaño del título */
+        top: 50px; /* Lo movemos un poco más abajo */
+    }
+    
+    .button-direction, .create-account-btn {
+        padding: 14px 0; /* Hacemos los botones un poco más grandes */
+    }
+}
+
+/* Media Query para dispositivos móviles (menores a 768px) */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem; /* Reducimos el tamaño del título para pantallas móviles */
+        top: 20px; /* Movemos el título un poco más arriba */
+    }
+
+    .right-form {
+        max-width: 90%; /* El formulario ocupará más espacio en pantallas pequeñas */
+        padding: 20px; /* Reducimos el padding para ahorrar espacio */
+    }
+
+    input[type="text"], input[type="password"], .button-direction, .create-account-btn {
+        width: 100%; /* Los inputs y botones ocuparán el 100% en móviles */
+        padding: 12px 0; /* Hacemos los inputs y botones más grandes */
+    }
+
+    label {
+        margin-left: 0; /* Eliminamos el margen izquierdo para mejorar el espaciado en móviles */
+    }
+
+    .check {
+        width: 100%; /* Aseguramos que el checkbox también ocupe el 100% */
+    }
+}
+
+
+

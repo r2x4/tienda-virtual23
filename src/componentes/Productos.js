@@ -9,13 +9,17 @@ import { faCartShopping, faPersonBiking, faPen, faMagnifyingGlass } from '@forta
 // Objeto que contiene las imágenes
 const images = {
     fondo2: require('../imagenes/Fondo2.jpg'), 
-    tennis1: require('../imagenesProductos/tennis1.jpg'), 
+    tennis1: require('../imagenesProductos/tennis1.jpg'),
+    tennis2: require('../imagenesProductos/tennis2.jpg'), 
+    tennis3: require('../imagenesProductos/tennis3.jpg'),  
     ropaDeportiva: require('../imagenesProductos/ropaDeportiva.jpg'),
-    implementosDeportivos: require('../imagenesProductos/ropaDeportiva.jpg'), 
-    bicicletas: require('../imagenesProductos/ropaDeportiva.jpg'),
+    implementosDeportivos: require('../imagenes/Fondo2.jpg'), 
+    bicicletas: require('../imagenesProductos/bici1.jpg'),
     logo: require('../imagenes/logo.jpg'),
     adidasNegra: require('../imagenesProductos/ropaDeportiva.jpg'),
     sudaderaAdidas: require('../imagenesProductos/ropaDeportiva.jpg'),
+    Buzo1: require('../imagenesProductos/Buzo1.jpg'),
+    Buzo2: require('../imagenesProductos/Buzo2.jpg'),
     pantaloneta: require('../imagenesProductos/ropaDeportiva.jpg')
 };
 
@@ -52,7 +56,7 @@ const Productos = () => {
                 <h1 className="heading-1">Productos más Vendidos</h1>
                 <div className="container-products">
                     <ProductCard 
-                        imgSrc={images.tennis1} 
+                        imgSrc={images.tennis3} 
                         title="Calzado Deportivo" 
                         noCartIcon={true} 
                     />
@@ -77,14 +81,15 @@ const Productos = () => {
             <section className="gallery">
                 <h1 className="heading-1">Galería de Productos</h1>
                 <div className="gallery-images">
-                    <img src={images.fondo2} alt="Zapatos Deportivos" className="gallery-img" />
+                    <img src={images.fondo2} alt="Implementos Deportivos" className="gallery-img" />
                     <img src={images.tennis1} alt="Tennis" className="gallery-img" />
                     <img src={images.ropaDeportiva} alt="Ropa Deportiva" className="gallery-img" />
-                    <img src={images.adidasNegra} alt="Zapatos Deportivos" className="gallery-img" />
+                    <img src={images.Buzo1} alt="Ropa Deportiva" className="gallery-img" />
                     <img src={images.sudaderaAdidas} alt="Tennis" className="gallery-img" />
                     <img src={images.pantaloneta} alt="Ropa Deportiva" className="gallery-img" />
-                    <img src={images.fondo2} alt="Zapatos Deportivos" className="gallery-img" />
-                    <img src={images.tennis1} alt="Tennis" className="gallery-img" />
+                    <img src={images.Buzo2} alt="Ropa Deportiva" className="gallery-img" />
+                    <img src={images.tennis2} alt="Tennis" className="gallery-img" />
+                    <img src={images.tennis3} alt="Tennis" className="gallery-img" />
                     <img src={images.ropaDeportiva} alt="Ropa Deportiva" className="gallery-img" />
                     <img src={images.adidasNegra} alt="Zapatos Deportivos" className="gallery-img" />
                     <img src={images.sudaderaAdidas} alt="Tennis" className="gallery-img" />
@@ -97,33 +102,33 @@ const Productos = () => {
                 <div className="container-products">
                     <ProductCard 
                         imgSrc={images.sudaderaAdidas} 
-                        title="Sudadera Adidas" 
+                        title="Ropa Deportiva" 
                         price="$120,000" 
-                        discount="-3%" 
+                        discount="3%" 
                     />
                     <ProductCard 
-                        imgSrc={images.tennis1} 
+                        imgSrc={images.tennis3} 
                         title="Calzado Running" 
                         price="$280,000" 
-                        discount="-5%" 
+                        discount="5%" 
                     />
                     <ProductCard 
                         imgSrc={images.fondo2} 
                         title="Balon FPC" 
                         price="$100,000" 
-                        discount="-3%" 
+                        discount="3%" 
                     />
                     <ProductCard 
                         imgSrc={images.adidasNegra} 
                         title="Tennis Adidas" 
                         price="$50,000" 
-                        discount="-5%" 
+                        discount="5%" 
                     />
                     <ProductCard 
                         imgSrc={images.pantaloneta} 
                         title="Balon FPC" 
                         price="$120,000" 
-                        discount="-3%" 
+                        discount="3%" 
                     />
                 </div>
             </section>
@@ -138,7 +143,7 @@ const Productos = () => {
                         description="Son objetos, prendas y accesorios que requiere una persona para practicar o desarrollar actividades físicas de tipo deportivo..." 
                     />
                     <BlogCard 
-                        imgSrc={images.tennis1} 
+                        imgSrc={images.tennis3} 
                         title="Calzado Deportivo" 
                         date="7 Noviembre 2023" 
                         description="El calzado deportivo sirve para proteger el pie de roces y abrasiones, ejercer un efecto amortiguador entre éste y el suelo..." 
