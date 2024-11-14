@@ -6,7 +6,6 @@ import '../css/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPersonBiking, faPen, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-// Objeto que contiene las imágenes
 const images = {
     fondo2: require('../imagenes/Fondo2.jpg'), 
     tennis1: require('../imagenesProductos/tennis1.jpg'),
@@ -31,7 +30,7 @@ const Productos = () => {
                     <FontAwesomeIcon icon={faPersonBiking} className="logo" />
                     <h6 className="header-title">Numero 1<br />Sport Five</h6>
                     <nav className="nav-links">
-                        <a href="/crear-cuenta">Crea tu Cuenta</a>
+                        <a href="/crear-cuenta">Crea tu Cuenta</a>  {/* Enlace a Crear Cuenta */}
                         <a href="/carrito"><FontAwesomeIcon icon={faCartShopping} /></a>
                         <div className="dropdown">
                             <button className="dropbtn">Categoría</button>

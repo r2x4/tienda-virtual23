@@ -1,13 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { BrowserRouter } from 'react-router-dom';  // Aquí agregamos BrowserRouter
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <BrowserRouter> {/* Un único BrowserRouter aquí */}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// Habilitar las características futuras de React Router
+root.render(
+  <BrowserRouter 
+    future={{
+      v7_startTransition: true, 
+      v7_relativeSplatPath: true
+    }}
+  >
     <App />
-  </BrowserRouter>,
-  document.getElementById('root')
+  </BrowserRouter>
 );
+
+
 

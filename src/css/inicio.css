@@ -83,7 +83,6 @@ input[type="checkbox"] {
     accent-color: #007bff; 
 }
 
-
 input[type="checkbox"]:checked {
     accent-color: red; 
 }
@@ -102,12 +101,11 @@ input[type="checkbox"]:checked {
     display: block; 
 }
 
-
 .button-direction:hover, .create-account-btn:hover {
     background-color: #44b670;
 }
 
-/* Centrado del texto 
+/* Centrado del texto */
 p {
     text-align: center;
 }
