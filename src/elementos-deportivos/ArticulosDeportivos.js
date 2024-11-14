@@ -1,6 +1,8 @@
 import React from 'react';
 import ProductCard from '../componentes/ProductCard';
+import HeaderElementos from '../elementos-deportivos/HeaderElementos';  // Importamos el Header común
 import '../css/Productos.css';
+import '../css/elementos.css';
 
 const images = {
     bici: require('../imagenesProductos/bici1.jpg'),
@@ -11,11 +13,8 @@ const images = {
 const ArticulosDeportivos = () => {
     return (
         <main className="main-content">
-            <header className="header">
-                <div className="header-content">
-                    <h6 className="header-title">Artículos Deportivos</h6>
-                </div>
-            </header>
+            {/* Usamos el HeaderElementos con el título correspondiente */}
+            <HeaderElementos titulo="Artículos Deportivos" />
 
             <section className="top-products">
                 <h1 className="heading-1">Artículos más Vendidos</h1>
@@ -45,4 +44,7 @@ const ArticulosDeportivos = () => {
 };
 
 export default ArticulosDeportivos;
+
+
+
 

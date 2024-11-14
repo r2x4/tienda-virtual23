@@ -1,23 +1,20 @@
 import React from 'react';
-import ProductCard from '../componentes/ProductCard'; // Importa la ProductCard
-import '../css/Productos.css'; // O el archivo CSS correspondiente
-import '../css/Header.css'; // Si es necesario para los estilos de la cabecera
+import ProductCard from '../componentes/ProductCard';
+import HeaderElementos from '../elementos-deportivos/HeaderElementos';  // Importa el Header común
+import '../css/Productos.css';
+import '../css/elementos.css';
 
 const images = {
   calzado1: require('../imagenesProductos/tennis1.jpg'),
   calzado2: require('../imagenesProductos/tennis2.jpg'),
   calzado3: require('../imagenesProductos/tennis3.jpg'),
-  // Añadir más imágenes si es necesario
 };
 
 const CalzadoDeportivo = () => {
   return (
     <main className="main-content">
-      <header className="header">
-        <div className="header-content">
-          <h6 className="header-title">Calzado Deportivo</h6>
-        </div>
-      </header>
+      {/* Usamos el HeaderElementos con el título correspondiente */}
+      <HeaderElementos titulo="Calzado Deportivo" />
 
       <section className="top-products">
         <h1 className="heading-1">Nuestros Calzados Más Vendidos</h1>
@@ -40,7 +37,6 @@ const CalzadoDeportivo = () => {
             price="$110,000"
             discount="8%"
           />
-          {/* Puedes agregar más ProductCards si es necesario */}
         </div>
       </section>
     </main>
@@ -48,5 +44,8 @@ const CalzadoDeportivo = () => {
 };
 
 export default CalzadoDeportivo;
+
+
+
 
 

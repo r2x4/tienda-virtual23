@@ -6,6 +6,7 @@ import '../css/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPersonBiking, faPen, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
+
 const images = {
     fondo2: require('../imagenes/Fondo2.jpg'), 
     tennis1: require('../imagenesProductos/tennis1.jpg'),

@@ -1,21 +1,20 @@
 import React from 'react';
 import ProductCard from '../componentes/ProductCard';
+import HeaderElementos from '../elementos-deportivos/HeaderElementos';  // Importamos el Header común
 import '../css/Productos.css';
+import '../css/elementos.css';
 
 const images = {
-    proteina: require('../imagenesProductos/ropaDeportiva.jpg'),  // Cambia la imagen por la correcta
-    aminoacidos: require('../imagenesProductos/ropaDeportiva.jpg'),  // Cambia la imagen por la correcta
-    creatina: require('../imagenesProductos/ropaDeportiva.jpg')  // Cambia la imagen por la correcta
+    proteina: require('../imagenesProductos/ropaDeportiva.jpg'),
+    aminoacidos: require('../imagenesProductos/ropaDeportiva.jpg'),
+    creatina: require('../imagenesProductos/ropaDeportiva.jpg')
 };
 
 const SuplementosDeportivos = () => {
     return (
         <main className="main-content">
-            <header className="header">
-                <div className="header-content">
-                    <h6 className="header-title">Suplementos Deportivos</h6>
-                </div>
-            </header>
+            {/* Usamos el HeaderElementos con el título correspondiente */}
+            <HeaderElementos titulo="Suplementos Deportivos" />
 
             <section className="top-products">
                 <h1 className="heading-1">Suplementos más Vendidos</h1>
@@ -45,4 +44,7 @@ const SuplementosDeportivos = () => {
 };
 
 export default SuplementosDeportivos;
+
+
+
 
