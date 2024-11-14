@@ -28,7 +28,7 @@ const CrearCuenta = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // para verificar que  las contraseñas coincidan
+        // Verificar que las contraseñas coincidan
         if (formData.password !== formData.confirmarPassword) {
             alert('Las contraseñas no coinciden');
             return;
@@ -52,20 +52,75 @@ const CrearCuenta = () => {
             return;
         }
 
-        // array de usuarios
+        // Agregar el nuevo usuario al array de usuarios
         usuariosGuardados.push(nuevoUsuario);
         localStorage.setItem('usuarios', JSON.stringify(usuariosGuardados));
 
         alert('Cuenta creada exitosamente. Ahora puedes iniciar sesión.');
-        navigate('/');  // Redirige al  (Login)
+        navigate('/');  // Redirige al login o página principal
     };
 
     return (
         <div className="crear-cuenta-container">
-            <h1 className="main-title">Crea tu Cuenta</h1>
             <section className="crear-cuenta-form">
                 <form onSubmit={handleSubmit}>
-                    {/* Campos del formulario */}
+                    <label htmlFor="nombre">Nombre</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        value={formData.nombre}
+                        onChange={handleInputChange}
+                        placeholder="Name"
+                        required
+                    />
+                    <label htmlFor="apellidos">Apellidos</label>
+                    <input
+                        type="text"
+                        id="apellidos"
+                        name="apellidos"
+                        value={formData.apellidos}
+                        onChange={handleInputChange}
+                        placeholder="Last Name"
+                        required
+                    />
+                    <label htmlFor="correo">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="correo"
+                        name="correo"
+                        value={formData.correo}
+                        onChange={handleInputChange}
+                        placeholder="Email"
+                        required
+                    />
+                    <label htmlFor="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        name="telefono"
+                        value={formData.telefono}
+                        onChange={handleInputChange}
+                        placeholder="Phone"
+                    />
+                    <label htmlFor="ciudad">Ciudad</label>
+                    <input
+                        type="text"
+                        id="ciudad"
+                        name="ciudad"
+                        value={formData.ciudad}
+                        onChange={handleInputChange}
+                        placeholder="City"
+                    />
+                    <label htmlFor="pais">País</label>
+                    <input
+                        type="text"
+                        id="pais"
+                        name="pais"
+                        value={formData.pais}
+                        onChange={handleInputChange}
+                        placeholder="Country"
+                    />
                     <label htmlFor="usuario">Usuario</label>
                     <input
                         type="text"
@@ -73,7 +128,7 @@ const CrearCuenta = () => {
                         name="usuario"
                         value={formData.usuario}
                         onChange={handleInputChange}
-                        placeholder="Usuario"
+                        placeholder="Username"
                         required
                     />
                     <label htmlFor="password">Contraseña</label>
@@ -83,7 +138,7 @@ const CrearCuenta = () => {
                         name="password"
                         value={formData.password}
                         onChange={handleInputChange}
-                        placeholder="Contraseña"
+                        placeholder="Password"
                         required
                     />
                     <label htmlFor="confirmarPassword">Confirmar Contraseña</label>
@@ -93,7 +148,7 @@ const CrearCuenta = () => {
                         name="confirmarPassword"
                         value={formData.confirmarPassword}
                         onChange={handleInputChange}
-                        placeholder="Confirmar Contraseña"
+                        placeholder="Confirm Password"
                         required
                     />
                     <button type="submit" className="submit-btn">Crear Cuenta</button>
@@ -104,6 +159,5 @@ const CrearCuenta = () => {
 };
 
 export default CrearCuenta;
-
 
 
