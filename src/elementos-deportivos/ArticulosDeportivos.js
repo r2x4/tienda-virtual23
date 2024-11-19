@@ -20,18 +20,21 @@ const ArticulosDeportivos = () => {
                 <h1 className="heading-1">Artículos más Vendidos</h1>
                 <div className="container-products">
                     <ProductCard 
+                        id="bici1" // Agregado id único para cada producto
                         imgSrc={images.bici} 
                         title="Bicicleta de Montaña" 
                         price="$350,000" 
                         discount="15%" 
                     />
                     <ProductCard 
+                        id="balon1" // Agregado id único
                         imgSrc={images.balon} 
                         title="Balón de Fútbol" 
                         price="$50,000" 
                         discount="10%" 
                     />
                     <ProductCard 
+                        id="guantes1" // Agregado id único
                         imgSrc={images.guantes} 
                         title="Guantes de Box" 
                         price="$40,000" 
@@ -44,6 +47,7 @@ const ArticulosDeportivos = () => {
 };
 
 export default ArticulosDeportivos;
+
 
 
 

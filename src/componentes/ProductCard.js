@@ -1,7 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useCart } from '../texto/cartTexto';  // Importamos el hook
 
-const ProductCard = ({ imgSrc, title, price, discount, noCartIcon }) => {
+const ProductCard = ({ imgSrc, title, price, discount, noCartIcon, id }) => {
+  const { addToCart } = useCart();  // Obtenemos la función addToCart desde el contexto
+
+  // Función para manejar el clic y agregar el producto al carrito
+  const handleAddToCart = () => {
+    const product = { id, title, price, imgSrc, discount };  // Producto con todos los detalles
+    addToCart(product);  // Llamamos a la función addToCart
+  };
+
   return (
     <div className="product-card">
       <img src={imgSrc} alt={title} />
@@ -9,9 +18,9 @@ const ProductCard = ({ imgSrc, title, price, discount, noCartIcon }) => {
       {price && <p>{price}</p>}
       {discount && <span className="discount-badge">{discount}</span>}
       
-     
+      {/* Mostrar el botón para agregar al carrito solo si no se pasa `noCartIcon` */}
       {!noCartIcon && (
-        <button className="add-to-cart">
+        <button className="add-to-cart" onClick={handleAddToCart}>
           <i className="fas fa-shopping-cart"></i> Agregar al carrito
         </button>
       )}
@@ -24,9 +33,17 @@ ProductCard.propTypes = {
   title: PropTypes.string.isRequired,
   price: PropTypes.string,
   discount: PropTypes.string,
-  noCartIcon: PropTypes.bool
+  noCartIcon: PropTypes.bool,
+  id: PropTypes.string.isRequired, // Aseguramos de que cada producto tenga un id único
 };
 
 export default ProductCard;
+
+
+
+
+
+
+
 
 

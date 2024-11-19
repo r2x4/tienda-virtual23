@@ -25,7 +25,7 @@
 
 .header .logo {
   font-size: 4rem;
-  color: #fcf3f3;
+  color: #f3fcf3;
   margin-right: 5px;
   margin-left: 50px;
 }
@@ -55,7 +55,7 @@
 }
 
 .dropbtn {
-  background-color: #9dc4b8;
+  background-color: #19755a;
   color: white;
   border: none;
   font-size: 1.2rem;
@@ -67,7 +67,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #2e3b4e;
+  background-color: #4ddd7d;
   min-width: 160px;
   z-index: 1;
   top: 40px;
@@ -86,7 +86,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #7fc3e2;
+  background-color: #4fa570;
   color: black;
 }
 
@@ -117,6 +117,28 @@
 
 .search-write input::placeholder {
   color: #aaa;
+}
+
+/* Estilos para el icono del carrito */
+.cart-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background-color: #df4747;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
 }
 
 /* Media Queries para pantallas pequeñas (hasta 768px) */
@@ -159,26 +181,6 @@
     width: 100%;
     font-size: 1rem;
     padding: 8px;
-  }
-}
-
-/* Media Queries para pantallas medianas (768px - 1024px) */
-@media (min-width: 768px) and (max-width: 1024px) {
-  .header {
-    padding: 20px 30px;
-  }
-
-  .header .logo {
-    font-size: 3.5rem;
-  }
-
-  .nav-links a {
-    font-size: 1.1rem;
-  }
-
-  /* Ajustes en la barra de búsqueda */
-  .search-write {
-    width: 250px;
   }
 }
 

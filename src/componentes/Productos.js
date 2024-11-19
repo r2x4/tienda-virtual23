@@ -5,15 +5,15 @@ import '../css/Productos.css';
 import '../css/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPersonBiking, faPen, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-
+import { useCart } from '../texto/cartTexto';  // Importar el hook del carrito
 
 const images = {
-    fondo2: require('../imagenes/Fondo2.jpg'), 
+    fondo2: require('../imagenes/Fondo2.jpg'),
     tennis1: require('../imagenesProductos/tennis1.jpg'),
-    tennis2: require('../imagenesProductos/tennis2.jpg'), 
-    tennis3: require('../imagenesProductos/tennis3.jpg'),  
+    tennis2: require('../imagenesProductos/tennis2.jpg'),
+    tennis3: require('../imagenesProductos/tennis3.jpg'),
     ropaDeportiva: require('../imagenesProductos/ropaDeportiva.jpg'),
-    implementosDeportivos: require('../imagenes/Fondo2.jpg'), 
+    implementosDeportivos: require('../imagenes/Fondo2.jpg'),
     bicicletas: require('../imagenesProductos/bici1.jpg'),
     logo: require('../imagenes/logo.jpg'),
     adidasNegra: require('../imagenesProductos/ropaDeportiva.jpg'),
@@ -24,14 +24,23 @@ const images = {
 };
 
 const Productos = () => {
+    const { addToCart } = useCart();  // Desestructuramos addToCart del hook
+
+    // Función para agregar al carrito
+    const handleAddToCart = (product) => {
+        addToCart(product); // Usamos el hook para agregar el producto al carrito
+    };
+
     return (
-        <main id="top" className="main-content"> 
+        <main id="top" className="main-content">
+            {/* Header */}
             <header className="header">
                 <div className="header-content">
                     <FontAwesomeIcon icon={faPersonBiking} className="logo" />
                     <h6 className="header-title">Numero 1<br />Sport Five</h6>
+                    {/* Navegación */}
                     <nav className="nav-links">
-                        <a href="/crear-cuenta">Crea tu Cuenta</a>  {/* Enlace a Crear Cuenta */}
+                        <a href="/crear-cuenta">Crea tu Cuenta</a>
                         <a href="/carrito"><FontAwesomeIcon icon={faCartShopping} /></a>
                         <div className="dropdown">
                             <button className="dropbtn">Categoría</button>
@@ -52,32 +61,38 @@ const Productos = () => {
                 </div>
             </header>
 
+            {/* Productos más vendidos */}
             <section className="top-products">
                 <h1 className="heading-1">Productos más Vendidos</h1>
                 <div className="container-products">
                     <ProductCard 
                         imgSrc={images.tennis3} 
                         title="Calzado Deportivo" 
+                        id="prod-1" 
                         noCartIcon={true} 
                     />
                     <ProductCard 
                         imgSrc={images.ropaDeportiva} 
                         title="Ropa Deportiva" 
+                        id="prod-2" 
                         noCartIcon={true} 
                     />
                     <ProductCard 
                         imgSrc={images.implementosDeportivos} 
                         title="Implementos Deportivos" 
+                        id="prod-3" 
                         noCartIcon={true} 
                     />
                     <ProductCard 
                         imgSrc={images.bicicletas} 
                         title="Bicicletas" 
+                        id="prod-4" 
                         noCartIcon={true}   
                     />
                 </div>
             </section>
 
+            {/* Galería de productos */}
             <section className="gallery">
                 <h1 className="heading-1">Galería de Productos</h1>
                 <div className="gallery-images">
@@ -97,6 +112,7 @@ const Productos = () => {
                 </div>
             </section>
 
+            {/* Productos recién llegados */}
             <section className="container specials">
                 <h1 className="heading-1">Llegados Recientemente</h1>
                 <div className="container-products">
@@ -105,34 +121,45 @@ const Productos = () => {
                         title="Ropa Deportiva" 
                         price="$120,000" 
                         discount="3%" 
+                        id="prod-5" 
+                        onAddToCart={() => handleAddToCart({ id: 'prod-5', title: 'Ropa Deportiva', price: '$120,000', imgSrc: images.sudaderaAdidas })} // Pasamos datos del producto
                     />
                     <ProductCard 
                         imgSrc={images.tennis3} 
                         title="Calzado Running" 
                         price="$280,000" 
                         discount="5%" 
+                        id="prod-6" 
+                        onAddToCart={() => handleAddToCart({ id: 'prod-6', title: 'Calzado Running', price: '$280,000', imgSrc: images.tennis3 })} 
                     />
                     <ProductCard 
                         imgSrc={images.fondo2} 
                         title="Balon FPC" 
                         price="$100,000" 
                         discount="3%" 
+                        id="prod-7" 
+                        onAddToCart={() => handleAddToCart({ id: 'prod-7', title: 'Balon FPC', price: '$100,000', imgSrc: images.fondo2 })} 
                     />
                     <ProductCard 
                         imgSrc={images.adidasNegra} 
                         title="Tennis Adidas" 
                         price="$50,000" 
                         discount="5%" 
+                        id="prod-8" 
+                        onAddToCart={() => handleAddToCart({ id: 'prod-8', title: 'Tennis Adidas', price: '$50,000', imgSrc: images.adidasNegra })} 
                     />
                     <ProductCard 
                         imgSrc={images.pantaloneta} 
                         title="Balon FPC" 
                         price="$120,000" 
                         discount="3%" 
+                        id="prod-9" 
+                        onAddToCart={() => handleAddToCart({ id: 'prod-9', title: 'Balon FPC', price: '$120,000', imgSrc: images.pantaloneta })} 
                     />
                 </div>
             </section>
 
+            {/* Blogs */}
             <section className="container blogs">
                 <h1 className="heading-1">Últimos Blogs</h1>
                 <div className="container-blogs">
@@ -157,9 +184,10 @@ const Productos = () => {
                 </div>
             </section>
 
+            {/* Footer */}
             <footer className="footer">
                 <section className="footer-links">
-                    <a href="#top">Ir al inicio</a> 
+                    <a href="#top">Ir al inicio</a>
                     <a href="mailto:rrs230780@gmail.com">Contáctame aquí</a>
                 </section>
                 <section className="social-media">
@@ -183,4 +211,7 @@ const Productos = () => {
 };
 
 export default Productos;
+
+
+
 

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;  /* Centra los items verticalmente en el header */
     justify-content: center;  /* Centra todo el contenido en el header */
-    background-color: #333;
+    background-color:#44b670;
     height: 80px;
     padding: 0 20px;  /* Añade algo de padding para que no quede pegado al borde */
     color: white;
@@ -23,7 +23,7 @@
     position: absolute;  /* Lo posiciona fuera del flujo normal del layout */
     left: 20px;  /* Distancia desde el borde izquierdo */
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #127923;
     color: white;
     border: none;
     border-radius: 5px;
@@ -32,7 +32,7 @@
 }
 
 .back-button:hover {
-    background-color: #0056b3;
+    background-color: #115f41;
 }
 
 
