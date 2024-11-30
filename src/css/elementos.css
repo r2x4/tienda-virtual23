@@ -1,0 +1,40 @@
+/* Header general */
+.header-producto {
+    display: flex;
+    align-items: center;  /* Centra los items verticalmente en el header */
+    justify-content: center;  /* Centra todo el contenido en el header */
+    background-color:#44b670;
+    height: 80px;
+    padding: 0 20px;  /* Añade algo de padding para que no quede pegado al borde */
+    color: white;
+    position: relative;  /* Para posicionar el botón de forma absoluta */
+}
+
+/* Estilos para el título */
+.header-title-producto {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;  /* Elimina márgenes innecesarios */
+    flex-grow: 1;  /* Permite que el título ocupe todo el espacio disponible */
+}
+
+/* Estilos para el botón de regreso */
+.back-button {
+    position: absolute;  /* Lo posiciona fuera del flujo normal del layout */
+    left: 20px;  /* Distancia desde el borde izquierdo */
+    padding: 10px 20px;
+    background-color: #127923;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.back-button:hover {
+    background-color: #115f41;
+}
+
+
+
+

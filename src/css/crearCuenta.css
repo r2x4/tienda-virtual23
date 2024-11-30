@@ -1,0 +1,165 @@
+/* Contenedor principal */
+.crear-cuenta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #5a6772;
+    padding: 0 15px; 
+    overflow: hidden; 
+    box-sizing: border-box;
+}
+
+/* Estilo para el formulario */
+.crear-cuenta-form {
+    background-color: #a0a7e9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;  
+    box-sizing: border-box;
+    overflow-y: auto;   
+    margin: 0 auto;     
+    max-height: 80vh;    
+}
+
+/* Estilo para el título */
+.main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+/* Estilos para los campos de entrada */
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo para los campos de tipo email, password, text, tel */
+form input[type="email"],
+form input[type="password"],
+form input[type="text"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo para el enfoque de los campos */
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="text"]:focus,
+form input[type="tel"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Estilo para el botón de submit */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #3125d4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background-color: #2a0d91;
+}
+
+/* Responsividad para pantallas medianas (tablet) */
+@media (max-width: 768px) {
+    .crear-cuenta-container {
+        padding: 10px; 
+    }
+
+    .crear-cuenta-form {
+        padding: 20px;
+        max-width: 90%;  
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    form input,
+    .submit-btn {
+        font-size: 16px;
+    }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .crear-cuenta-container {
+        padding: 5px; 
+    }
+
+    .crear-cuenta-form {
+        padding: 15px;
+        max-width: 100%;  
+    }
+
+    .main-title {
+        font-size: 1.6rem;
+    }
+
+    form input,
+    .submit-btn {
+        font-size: 14px;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles muy pequeños) */
+@media (max-width: 320px) {
+    .crear-cuenta-container {
+        padding: 5px;
+    }
+
+    .crear-cuenta-form {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .main-title {
+        font-size: 1.4rem;
+    }
+
+    form input,
+    .submit-btn {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
