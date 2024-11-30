@@ -15,7 +15,7 @@ export const CartProvider = ({ children }) => {
         // Si el producto ya existe, incrementamos la cantidad
         return prevCart.map(item => 
           item.id === product.id 
-            ? { ...item, quantity: item.quantity + 1 }  // Incrementar cantidad
+            ? { ...item, quantity: item.quantity + 1 }  
             : item
         );
       } else {
