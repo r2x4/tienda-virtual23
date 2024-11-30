@@ -8,6 +8,7 @@ import { faCartShopping, faPersonBiking, faPen, faMagnifyingGlass } from '@forta
 import { useCart } from '../texto/cartTexto';  // Importar el hook del carrito
 
 const images = {
+<<<<<<< HEAD
     fondo2: require('../imagenes/Fondo2.jpg'),
     tennis1: require('../imagenesProductos/tennis1.jpg'),
     tennis2: require('../imagenesProductos/tennis2.jpg'),
@@ -25,6 +26,38 @@ const images = {
 
 const Productos = () => {
     const { addToCart } = useCart();  // Desestructuramos addToCart del hook
+=======
+    logo: require('../ImagenesLogo/logo.jpg'),
+    fondo2: require('../ImagenesLogo/Fondo2.jpg'),
+    // Calzado
+    tennis1: require('../ImagenesCalzadoDeportivo/tennis1.jpg'),
+    tennis2: require('../ImagenesCalzadoDeportivo/tennis2.jpg'),
+    tennis3: require('../ImagenesCalzadoDeportivo/tennis3.jpg'),
+    tennisAdidas: require('../ImagenesCalzadoDeportivo/TennisAdidas1.jpg'),
+    tennisDama: require('../ImagenesCalzadoDeportivo/TennisDama1.jpg'),
+    // Ropa_Deportiva
+    buzo1: require('../ImagenesRopaDeportiva/Buzo1.jpg'),
+    buzo2: require('../ImagenesRopaDeportiva/Buzo2.jpg'),
+    pantaloneta: require('../ImagenesRopaDeportiva/Pantaloneta1.jpg'),
+    adidasNegra: require('../ImagenesRopaDeportiva/Sudadera1.jpg'),
+    sudaderaAdidas: require('../ImagenesRopaDeportiva/ropaDeportiva.jpg'),
+    ropaDeportiva: require('../ImagenesRopaDeportiva/ropaDeportiva.jpg'),
+    // Implementos
+    balonFutbol: require('../ImagenesImplementosDeportivos/Balon_Futbol.jpg'),
+    balonBaloncesto: require('../ImagenesImplementosDeportivos/Balon_Baloncesto.jpg'),
+    peraBoxeo: require('../ImagenesImplementosDeportivos/Pera_Boxeo.jpg'),
+    sacoBoxeo: require('../ImagenesImplementosDeportivos/Saco_Boxeo.jpg'),
+    bicicletas: require('../imagenesProductos/bici1.jpg'),
+    // Suplementos
+    suplementos: require('../ImagenesSuplementosDeportivos/Suplementos.jpg'),
+    aminoacidos: require('../ImagenesSuplementosDeportivos/Aminoacidos.jpg'),
+    creatina: require('../ImagenesSuplementosDeportivos/Creatina.jpg'),
+    proteina: require('../ImagenesSuplementosDeportivos/Proteina_Whey.jpg')
+};
+
+const Productos = () => {
+    const { addToCart, getCartItemCount } = useCart();  // Desestructuramos addToCart y getCartItemCount del hook
+>>>>>>> master
 
     // Función para agregar al carrito
     const handleAddToCart = (product) => {
@@ -41,14 +74,28 @@ const Productos = () => {
                     {/* Navegación */}
                     <nav className="nav-links">
                         <a href="/crear-cuenta">Crea tu Cuenta</a>
+<<<<<<< HEAD
                         <a href="/carrito"><FontAwesomeIcon icon={faCartShopping} /></a>
+=======
+                        <a href="/carrito" className="cart-link">
+                            <FontAwesomeIcon icon={faCartShopping} />
+                            {/* Mostrar el número de productos en el carrito */}
+                            {getCartItemCount() > 0 && <span className="cart-count">{getCartItemCount()}</span>}
+                        </a>
+>>>>>>> master
                         <div className="dropdown">
                             <button className="dropbtn">Categoría</button>
                             <div className="dropdown-content">
                                 <a href="/calzado-deportivo">Calzado Deportivo</a>
+<<<<<<< HEAD
                                 <a href="/prendas-deportivas">Prendas Deportivas</a>
                                 <a href="/suplementos-deportivos">Suplementos Deportivos</a>
                                 <a href="/articulos-deportivos">Artículos Deportivos</a>
+=======
+                                <a href="/articulos-deportivos">Implementos Deportivos</a>
+                                <a href="/prendas-deportivas">Ropa Deportiva</a>
+                                <a href="/suplementos-deportivos">Suplementos Deportivos</a>
+>>>>>>> master
                             </div>
                         </div>
                         <a href="/ofertas">Ofertas</a>
@@ -68,12 +115,16 @@ const Productos = () => {
                     <ProductCard 
                         imgSrc={images.tennis3} 
                         title="Calzado Deportivo" 
+<<<<<<< HEAD
                         id="prod-1" 
+=======
+>>>>>>> master
                         noCartIcon={true} 
                     />
                     <ProductCard 
                         imgSrc={images.ropaDeportiva} 
                         title="Ropa Deportiva" 
+<<<<<<< HEAD
                         id="prod-2" 
                         noCartIcon={true} 
                     />
@@ -81,12 +132,23 @@ const Productos = () => {
                         imgSrc={images.implementosDeportivos} 
                         title="Implementos Deportivos" 
                         id="prod-3" 
+=======
+>>>>>>> master
                         noCartIcon={true} 
                     />
                     <ProductCard 
                         imgSrc={images.bicicletas} 
+<<<<<<< HEAD
                         title="Bicicletas" 
                         id="prod-4" 
+=======
+                        title="Implementos Deportivos" 
+                        noCartIcon={true} 
+                    />
+                    <ProductCard 
+                        imgSrc={images.creatina} 
+                        title="Suplementos Deportivos"  
+>>>>>>> master
                         noCartIcon={true}   
                     />
                 </div>
@@ -96,6 +158,7 @@ const Productos = () => {
             <section className="gallery">
                 <h1 className="heading-1">Galería de Productos</h1>
                 <div className="gallery-images">
+<<<<<<< HEAD
                     <img src={images.fondo2} alt="Implementos Deportivos" className="gallery-img" />
                     <img src={images.tennis1} alt="Tennis" className="gallery-img" />
                     <img src={images.ropaDeportiva} alt="Ropa Deportiva" className="gallery-img" />
@@ -108,6 +171,23 @@ const Productos = () => {
                     <img src={images.ropaDeportiva} alt="Ropa Deportiva" className="gallery-img" />
                     <img src={images.adidasNegra} alt="Zapatos Deportivos" className="gallery-img" />
                     <img src={images.sudaderaAdidas} alt="Tennis" className="gallery-img" />
+=======
+                    <img src={images.balonFutbol} alt="Implementos Deportivos" className="gallery-img" />
+                    <img src={images.tennis1} alt="Tennis" className="gallery-img" />
+                    <img src={images.ropaDeportiva} alt="Ropa Deportiva" className="gallery-img" />
+                    <img src={images.creatina} alt="Suplemtos Deportivos" className="gallery-img" />
+                    <img src={images.tennis2} alt="Tennis" className="gallery-img" />
+                    <img src={images.sacoBoxeo} alt="Implemetos Deportivos" className="gallery-img" />
+                    <img src={images.balonBaloncesto} alt="Implementos Deportivos" className="gallery-img" />
+                    <img src={images.buzo1} alt="Ropa Deportiva" className="gallery-img" />
+                    <img src={images.peraBoxeo} alt="Implementos Deportivos" className="gallery-img" />
+                    <img src={images.pantaloneta} alt="Ropa Deportiva" className="gallery-img" />
+                    <img src={images.proteina} alt="Suplemento Deportivo" className="gallery-img" />
+                    <img src={images.tennis3} alt="Tennis" className="gallery-img" />
+                    <img src={images.aminoacidos} alt="Suplementos Deportivos" className="gallery-img" />
+                    <img src={images.adidasNegra} alt="Zapatos Deportivos" className="gallery-img" />
+                    <img src={images.buzo2} alt="Ropa Deportiva" className="gallery-img" />
+>>>>>>> master
                     <img src={images.pantaloneta} alt="Ropa Deportiva" className="gallery-img" />
                 </div>
             </section>
@@ -117,6 +197,7 @@ const Productos = () => {
                 <h1 className="heading-1">Llegados Recientemente</h1>
                 <div className="container-products">
                     <ProductCard 
+<<<<<<< HEAD
                         imgSrc={images.sudaderaAdidas} 
                         title="Ropa Deportiva" 
                         price="$120,000" 
@@ -139,6 +220,22 @@ const Productos = () => {
                         discount="3%" 
                         id="prod-7" 
                         onAddToCart={() => handleAddToCart({ id: 'prod-7', title: 'Balon FPC', price: '$100,000', imgSrc: images.fondo2 })} 
+=======
+                        imgSrc={images.tennis3} 
+                        title="Zapatillas Puma" 
+                        price="$410,000" 
+                        discount="8%" 
+                        id="product-calzado3" 
+                        onAddToCart={() => handleAddToCart({ id: 'product-calzado3', title: 'Zapatillas Puma', price: '$410,000', imgSrc: images.tennis3 })} 
+                    />
+                    <ProductCard 
+                        imgSrc={images.balonFutbol} 
+                        title="Balon FPC" 
+                        price="$150,000" 
+                        discount="10%" 
+                        id="prod-7" 
+                        onAddToCart={() => handleAddToCart({ id: 'prod-7', title: 'Balon FPC', price: '$100,000', imgSrc: images.balonFutbol })} 
+>>>>>>> master
                     />
                     <ProductCard 
                         imgSrc={images.adidasNegra} 
@@ -215,3 +312,8 @@ export default Productos;
 
 
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> master
