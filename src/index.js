@@ -6,11 +6,6 @@ import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-<<<<<<< HEAD
-// Habilitar las características futuras de React Router
-=======
-
->>>>>>> master
 root.render(
   <BrowserRouter 
     future={{
