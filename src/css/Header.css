@@ -119,20 +119,6 @@
   color: #aaa;
 }
 
-<<<<<<< HEAD
-/* Estilos para el icono del carrito */
-.cart-icon {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cart-count {
-  position: absolute;
-  top: -5px;
-  right: -10px;
-=======
 /* Estilos para el icono del carrito y el contador */
 .cart-container {
   display: flex;
@@ -147,7 +133,6 @@
 }
 
 .cart-count {
->>>>>>> master
   background-color: #df4747;
   color: white;
   font-size: 14px;
@@ -199,10 +184,6 @@
     font-size: 1rem;
     padding: 8px;
   }
-<<<<<<< HEAD
-}
-
-=======
 
   /* Ajustes en el carrito */
   .cart-container {
@@ -211,8 +192,3 @@
     right: 0;
   }
 }
-
-
-
->>>>>>> master
-  

@@ -1,24 +1,14 @@
 import React, { createContext, useContext, useState } from 'react';
 
-<<<<<<< HEAD
-// Crear el contexto
-const CartContext = createContext();
-
-// El proveedor de contexto que envuelve la aplicación
-=======
 // Crear el contexto del carrito
 const CartContext = createContext();
 
 // El proveedor de contexto que envuelve toda la aplicación
->>>>>>> master
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]); // Estado del carrito
 
   // Función para agregar un producto al carrito
   const addToCart = (product) => {
-<<<<<<< HEAD
-    setCart(prevCart => [...prevCart, product]);
-=======
     setCart(prevCart => {
       const existingProduct = prevCart.find(item => item.id === product.id);
       if (existingProduct) {
@@ -33,21 +23,10 @@ export const CartProvider = ({ children }) => {
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
->>>>>>> master
   };
 
   // Función para eliminar un producto del carrito
   const removeFromCart = (id) => {
-<<<<<<< HEAD
-    setCart(cart.filter(product => product.id !== id));
-  };
-
-  // Obtener el número total de productos en el carrito
-  const getCartItemCount = () => cart.length;
-
-  return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart, getCartItemCount }}>
-=======
     setCart(cart.filter(product => product.id !== id)); // Filtramos el carrito
   };
 
@@ -61,7 +40,6 @@ export const CartProvider = ({ children }) => {
 
   return (
     <CartContext.Provider value={{ cart, addToCart, removeFromCart, getCartItemCount, getTotalPrice }}>
->>>>>>> master
       {children}
     </CartContext.Provider>
   );
@@ -69,11 +47,3 @@ export const CartProvider = ({ children }) => {
 
 // Hook para usar el contexto en cualquier componente
 export const useCart = () => useContext(CartContext);
-
-
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> master
