@@ -28,7 +28,7 @@ const images = {
     balonBaloncesto: require('../ImagenesImplementosDeportivos/Balon_Baloncesto.jpg'),
     peraBoxeo: require('../ImagenesImplementosDeportivos/Pera_Boxeo.jpg'),
     sacoBoxeo: require('../ImagenesImplementosDeportivos/Saco_Boxeo.jpg'),
-    bicicletas: require('../ImagenesProductos/bici1.jpg'),
+    bicicletas: require('../imagenesProductos/bici1.jpg'),
     // Suplementos
     suplementos: require('../ImagenesSuplementosDeportivos/Suplementos.jpg'),
     aminoacidos: require('../ImagenesSuplementosDeportivos/Aminoacidos.jpg'),

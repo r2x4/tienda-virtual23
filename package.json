@@ -5,6 +5,7 @@
   "homepage": "https://r2x4.github.io/tienda-virtual-poli",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@stripe/stripe-js": "^4.10.0",
@@ -53,9 +54,12 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "eslint": "^9.18.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.0.1",
+    "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "gh-pages": "^6.2.0",
     "prettier": "^3.4.1"
   }
