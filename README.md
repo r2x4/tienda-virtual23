@@ -13,6 +13,11 @@
 ![calzado_pag](https://github.com/user-attachments/assets/76b408f1-969c-4ab9-8cd0-04c239adcef8)
 ![suplementos_pag](https://github.com/user-attachments/assets/5bd2b26f-2de4-4315-ab15-2a34e163be43)
 
+# Video aplicativo
+
+https://github.com/user-attachments/assets/d543ce69-a6e0-4678-ae5d-46cac5af895f
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
