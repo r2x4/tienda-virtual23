@@ -1,3 +1,13 @@
+<h1> React, JavaScript, Html y Css Tienda Virtual</h1>
+
+- Estado del proyecto: En construccion.
+
+# Imagenes
+
+![inicio](https://github.com/user-attachments/assets/63c814a8-75fc-44e0-b4f9-e7936a695f78)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
