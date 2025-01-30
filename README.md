@@ -9,8 +9,9 @@
 ![productos](https://github.com/user-attachments/assets/7c33d404-fefd-4248-8d6c-f4dc1b6a23b1)
 52af160f8)
 ![productos2](https://github.com/user-attachments/assets/b97cb750-e22d-403c-bfa3-8719a4649162)
-
-
+![blog](https://github.com/user-attachments/assets/cbf6cfa4-ceb9-4f02-84a9-26d4ed4edaa8)
+![calzado_pag](https://github.com/user-attachments/assets/76b408f1-969c-4ab9-8cd0-04c239adcef8)
+![suplementos_pag](https://github.com/user-attachments/assets/5bd2b26f-2de4-4315-ab15-2a34e163be43)
 
 # Getting Started with Create React App
 
