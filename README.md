@@ -5,6 +5,10 @@
 # Imagenes
 
 ![inicio](https://github.com/user-attachments/assets/63c814a8-75fc-44e0-b4f9-e7936a695f78)
+![formulario_ingreso](https://github.com/user-attachments/assets/bca3171d-fd9e-4de9-9840-15c
+![productos](https://github.com/user-attachments/assets/7c33d404-fefd-4248-8d6c-f4dc1b6a23b1)
+52af160f8)
+![productos2](https://github.com/user-attachments/assets/b97cb750-e22d-403c-bfa3-8719a4649162)
 
 
 
