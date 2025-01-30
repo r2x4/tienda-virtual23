@@ -5,7 +5,7 @@ import '../css/Productos.css';
 import '../css/elementos.css';
 
 const images = {
-    bici: require('../imagenesProductos/bici1.jpg'),
+    bici: require('../imagenesProductos/bici12.jpg'),
     balonFutbol: require('../ImagenesImplementosDeportivos/Balon_Futbol.jpg'),
     balonBaloncesto: require('../ImagenesImplementosDeportivos/Balon_Baloncesto.jpg'),
     peraBoxeo: require('../ImagenesImplementosDeportivos/Pera_Boxeo.jpg'),
