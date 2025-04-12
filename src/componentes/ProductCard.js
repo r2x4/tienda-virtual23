@@ -7,7 +7,7 @@ const ProductCard = ({ imgSrc, title, price, discount, noCartIcon, id }) => {
 
   // Función para manejar el clic y agregar el producto al carrito
   const handleAddToCart = () => {
-    const product = { id, title, price, imgSrc, discount };  // Producto con todos los detalles
+    const product = { id, title, price, imgSrc, discount, quantity: 1 };  // Producto con todos los detalles
     addToCart(product);  // Llamamos a la función addToCart
   };
 
