@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCart } from '../texto/cartTexto';  // Usamos el hook del carrito
-import '../css/Carrito.css';  // Estilos del carrito
+import '../../Carrito.css';  // Estilos del carrito
 
 const CartPage = () => {
   const { cart, removeFromCart, getTotalPrice } = useCart();  // Accedemos al carrito y las funciones

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../css/crearCuenta.css';
-
+import  '../../css/crearCuenta.css';
+;
 const CrearCuenta = () => {
     const navigate = useNavigate();
 

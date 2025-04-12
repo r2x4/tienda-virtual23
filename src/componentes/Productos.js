@@ -1,8 +1,8 @@
 import React from 'react';
 import ProductCard from './ProductCard';
 import BlogCard from './BlogCard';
-import '../css/Productos.css';
-import '../css/Header.css';
+import 'Productos.css';
+import 'Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping, faPersonBiking, faPen, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { useCart } from '../texto/cartTexto';  // Importar el hook del carrito

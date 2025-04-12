@@ -1,24 +1,24 @@
 /* Estilos generales para el contenedor */
 .inicio-container {
-    height: 100vh; 
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; 
-    background-image: url('../ImagenesLogo/Fondo2.jpg'); 
-    background-size: cover; 
-    background-position: center center; 
-    background-repeat: no-repeat; 
-    position: relative; 
+    flex-direction: column;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradiente lineal */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
 /* Estilo para el título principal en la parte superior */
 .main-title {
-    font-size: 3rem; 
-    color: rgb(247, 243, 243); 
+    font-size: 3rem;
+    color: white; /* Cambiado a blanco para mejor contraste */
     font-weight: bold;
-    position: absolute; 
-    top: 30px; 
+    position: absolute;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%); 
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
@@ -27,12 +27,12 @@
 
 /* Estilos del formulario de ingreso */
 .right-form {
-    background-color: rgba(191, 192, 250, 0.8); 
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
     padding: 30px;
     border-radius: 10px;
     width: 100%;
-    max-width: 400px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 5; 
     display: flex;
     flex-direction: column; 
@@ -47,40 +47,37 @@ h2 {
 }
 
 /* Alineación y estilo de los labels */
-label {
+label { 
     font-weight: bold;
     margin-bottom: 5px;
     display: block;
-    text-align: left; 
-    width: 100%; 
-    margin-left: 0; 
+    text-align: left;
+    width: 100%;
 }
 
 /* Estilos de los campos de texto */
 input[type="text"], input[type="password"] {
-    width: 95%; 
+    width: 100%; /* Ajustado para ocupar todo el ancho */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
 }
 
 /* Estilo para el checkbox "Recordar" */
 .check {
-    display: inline-flex; 
-    align-items: center; 
+    display: flex; /* Cambiado a flex */
+    align-items: center;
+    justify-content: flex-start; /* Alinea el checkbox al inicio */
     margin-bottom: 15px;
-    width: 100%; 
-    justify-content: flex-start; 
 }
 
 /* Estilo del checkbox */
 input[type="checkbox"] {
-    margin-right: 7px; 
-    width: 20px;  
-    height: 20px;
-    accent-color: #007bff; 
+    margin-right: 10px; /* Aumentado el margen derecho */
+    accent-color: #007bff;
 }
 
 input[type="checkbox"]:checked {
@@ -88,17 +85,17 @@ input[type="checkbox"]:checked {
 }
 
 .button-direction, .create-account-btn {
-    width: 100%; 
-    padding: 12px 0; 
+    width: 100%;
+    padding: 12px 0;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 16px; 
+    font-size: 16px;
     cursor: pointer;
-    margin: 0 auto 15px; 
-    text-align: center; 
-    display: block; 
+    margin: 0 auto 15px;
+    text-align: center;
+    display: block;
 }
 
 .button-direction:hover, .create-account-btn:hover {
@@ -108,45 +105,54 @@ input[type="checkbox"]:checked {
 /* Centrado del texto */
 p {
     text-align: center;
+    margin-top: 10px; /* Agregado margen superior para separar del botón */
 }
 
 a {
-    color: #f30202;
+    color: #007bff; /* Enlace con el color del botón */
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
 /* Media Query para pantallas grandes (mayores a 1200px) */
 @media (min-width: 1200px) {
     .right-form {
-        max-width: 500px; 
-        padding: 40px; 
+        max-width: 500px;
+        padding: 40px;
     }
-    
+
     .main-title {
         font-size: 4rem;
-        top: 50px; 
+        top: 50px;
     }
-    
+
     .button-direction, .create-account-btn {
-        padding: 14px 0; 
+        padding: 14px 0;
     }
 }
 
 /* Media Query para dispositivos móviles (menores a 768px) */
 @media (max-width: 768px) {
+    .inicio-container {
+        padding: 20px; /* Agregado padding al contenedor */
+    }
+
     .main-title {
-        font-size: 2.5rem; 
-        top: 20px; 
+        font-size: 2.5rem;
+        top: 20px;
     }
 
     .right-form {
-        max-width: 90%; 
-        padding: 20px; 
+        max-width: 90%;
+        padding: 20px;
     }
 
     input[type="text"], input[type="password"], .button-direction, .create-account-btn {
-        width: 100%; 
-        padding: 12px 0; 
+        width: 100%;
+        padding: 12px 0;
     }
 
     label {
@@ -154,7 +160,7 @@ a {
     }
 
     .check {
-        width: 100%; 
+        width: 100%;
     }
 }
 
